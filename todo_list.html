@@ -5,21 +5,32 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-1.11.0.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Address Book</title>
+    <title>Tasks</title>
   </head>
   <body>
     <div class="container">
-      <h1>Address Book</h1>
+      <h1>Tasks</h1>
 
       <div class="row">
-        <div class="col-md-6">
+        <form id="new-task">
 
-        </div>
+          <div id="new-tasks">
+            <div class="a-task">
+              <div class="form-group">
+                <label for="new-task">Add a Task:</label>
+                <input class="new-task" type="text">
+              </div><br />
+            </div>
+          </div>
+          <span id="add-task" class="adder phone-adder">Add another task!</span><br />
+          <button type="submit" class="btn">Add Task(s)</button>
+        </form>
 
-        <ul id="contacts"></ul>
+        <div id="tasks"></div>
 
-        <div class="col-md-6">
-
+        <div class="show-task">
+          <h2></h2>
+          <p>To Do: <span class="todo"></span></p>
         </div>
 
       </div>
